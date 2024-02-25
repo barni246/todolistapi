@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-b==n2*2ot0(l_$m1&6!*g&7h=x#vk=(@5_izp1%hn#po%(-t&v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Barni.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    'Barni.pythonanywhere.com',
+    'localhost']
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo',
 ]
 
 MIDDLEWARE = [
