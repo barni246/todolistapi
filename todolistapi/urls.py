@@ -20,7 +20,7 @@ from todo.views import TodoViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'todos', TodoViewSet)
+router.register(r'todos', viewset=TodoViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
