@@ -13,7 +13,8 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 class TodoSerializer(serializers.HyperlinkedModelSerializer):
     # user = CurrentUserDefault()
-    user = serializers.PrimaryKeyRelatedField(read_only=True, default=serializers.CurrentUserDefault())
+    user = UserSerializer()
+    # user = serializers.PrimaryKeyRelatedField(read_only=True, default=serializers.CurrentUserDefault())
     
     class Meta:
         model = Todo
