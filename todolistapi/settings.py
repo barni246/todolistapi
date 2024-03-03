@@ -134,3 +134,12 @@ MEDIA_ROOT = '/home/Barni/todolistapi/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/Barni/todolistapi/static'
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+    ],
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+    ]
+}
